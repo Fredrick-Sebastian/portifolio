@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fredrick Severine | Developer & Visionary</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: url(img/backphoto.jpg)no-repeat center/cover ;
+      color: var(--text-light);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+      opacity: 0.8;
+    }
+
+    header h1 span {
+      color: #ffd369;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background: #ffd369;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .developer{
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      background: #161616;
+      width: 455px; 
+      height: 210px; 
+      border-radius: 10px 30px 50px 100px;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #0f4c75;
+    }
+
+    #portfolio .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #0f4c75;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .social-media{
+      width: auto;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .social-img{
+      width: 20px;
+      height: 20px;
+      margin: 20px;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #0f4c75;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="developer">
+      <img src="img/developer.jpg" alt="" style="width: auto; height: 200px; border-radius: 10px 30px 50px 100px;">
+      <pre> <strong>Web-developer & Web-desighner</strong>
+        Let us work together for future 
+        that aimed to change our life, 
+        am here to change your businesses 
+        to be technological and globaly.
+      </pre>
+    </div>
+    <h1>Hello, I'm <span>Fredrick Severine Sebastian</span></h1>
+    <p>I build websites that change lives.</p>
+    <a href="#contact" class="btn">Let’s Connect</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer and designer from Mwanza, Tanzania. My journey began with a simple desire—to change my own life through code. Today, I use technology to uplift others, from social impact foundations to businesses across Tanzania and beyond.</p>
+    <p>Skills: HTML, CSS, JavaScript, Python, WordPress, Figma</p>
+    <p>Mission: To transform lives through meaningful technology.</p>
+    <p>Vision: A digital world where every soul has a voice and value.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Future Family Foundation</h3>
+        <p>A nonprofit website for helping orphans and street children.</p>
+      </div>
+      <div class="project">
+        <h3>Nyumbani Africa Safari</h3>
+        <p>Tourism company website with trip planner and booking features.</p>
+       <!-- <iframe src="https://share.google/h6VMrPEsmdXiS2oHl" title="Nyumbani Africa Safari Project"></iframe>-->
+      </div>
+      <div class="project">
+        <h3>Ray’s Shoppers</h3>
+        <p>Shop website for direct and global product ordering.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:your-email@example.com" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  <div id="social" class="social-media">
+    <div class="container">
+      <a href="https://youtube.com/@nyumbaniafricasafari?si=wNEGlxqg7WjKB8mp" target="_blank"><img src="img.html/yt.jpg" alt="" class="social-img"></a>
+      <a href="https://www.instagram.com/nyumbaniafrica_safari?utm_source=qr&igsh=OGl5eWgyNW9vc2h5" target="_blank"><img src="img/ig.jpg" alt="" class="social-img"></a>
+      <a href="https://www.linkedin.com/in/fredrick-sebastian-54bb8a343?utm_source=share&utm_compaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="img.html/in.jpg" alt="" class="social-img"></a>
+      <a href="https://www.facebook.com/profile.php?id=100069324382914" target="_blank"><img src="img.html/fb.jpg" alt="" class="social-img"></a>
+      <a href="https://wa.me/255711348700" target="_blank"><img src="img.html/wt.jpg" alt="" class="social-img"></a>
+      <a href="https://t.me/NyumbaniSafari" target="_blank"><img src="img.html/tg.jpg" alt="" class="social-img"></a>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Fredrick Severine. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
