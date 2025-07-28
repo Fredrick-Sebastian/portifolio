@@ -65,19 +65,32 @@
       border-radius: 10px 30px 50px 100px;
     }
 
+    .developer img{
+      width: auto; 
+      height: 200px; 
+      border-radius: 10px 30px 50px 100px;
+    }
+
     h2 {
       margin-bottom: 1rem;
       color: #0f4c75;
     }
 
+    .projects{
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+    }
+   /* 
     #portfolio .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
     }
-
+*/
     .project {
       background: white;
+      margin: 20px auto;
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -96,6 +109,11 @@
       border-radius: 5px;
     }
 
+    iframe{
+      width: 900px;
+      height: 400px;
+    }
+
     button {
       background: #0f4c75;
       color: white;
@@ -112,6 +130,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 20px;
     }
     
     .social-img{
@@ -127,13 +146,25 @@
       background: #0f4c75;
       color: white;
     }
+
+    @media (max-width: 768px) {
+      iframe{
+      width: 400px;
+      height: 400px;
+      }
+
+      .developer{
+        width: auto;
+    }
+    }
+
   </style>
 </head>
 
 <body>
   <header>
     <div class="developer">
-      <img src="img/developer.jpg" alt="" style="width: auto; height: 200px; border-radius: 10px 30px 50px 100px;">
+      <img src="img/developer.jpg" alt="">
       <pre> <strong>Web-developer & Web-desighner</strong>
         Let us work together for future 
         that aimed to change our life, 
@@ -143,7 +174,7 @@
     </div>
     <h1>Hello, I'm <span>Fredrick Severine Sebastian</span></h1>
     <p>I build websites that change lives.</p>
-    <a href="#contact" class="btn">Let’s Connect</a>
+    <a href="#contact" class="btn">Connect with Me</a>
   </header>
 
   <section id="about">
@@ -160,15 +191,17 @@
       <div class="project">
         <h3>Future Family Foundation</h3>
         <p>A nonprofit website for helping orphans and street children.</p>
+       <!-- <iframe src="https://share.google/h6VMrPEsmdXiS2oHl" title="Future Family Foundation Project"></iframe>--> 
       </div>
       <div class="project">
         <h3>Nyumbani Africa Safari</h3>
         <p>Tourism company website with trip planner and booking features.</p>
-       <!-- <iframe src="https://share.google/h6VMrPEsmdXiS2oHl" title="Nyumbani Africa Safari Project"></iframe>-->
+       <iframe src="https://share.google/h6VMrPEsmdXiS2oHl" title="Nyumbani Africa Safari Project"></iframe>
       </div>
       <div class="project">
         <h3>Ray’s Shoppers</h3>
         <p>Shop website for direct and global product ordering.</p>
+       <iframe src="https://fredrick-sebastian.github.io/shoppers/" title="Ray's Shoppers Project"></iframe>
       </div>
     </div>
   </section>
@@ -177,7 +210,7 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <form action="mailto:your-email@example.com" method="post">
+    <form action="mailto:futurefamily154@gmail.com" method="post">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Your Message"></textarea>
@@ -185,12 +218,12 @@
     </form>
   <div id="social" class="social-media">
     <div class="container">
-      <a href="https://youtube.com/@nyumbaniafricasafari?si=wNEGlxqg7WjKB8mp" target="_blank"><img src="img.html/yt.jpg" alt="" class="social-img"></a>
+      <a href="https://youtube.com/@nyumbaniafricasafari?si=wNEGlxqg7WjKB8mp" target="_blank"><img src="img/yt.jpg" alt="" class="social-img"></a>
       <a href="https://www.instagram.com/nyumbaniafrica_safari?utm_source=qr&igsh=OGl5eWgyNW9vc2h5" target="_blank"><img src="img/ig.jpg" alt="" class="social-img"></a>
-      <a href="https://www.linkedin.com/in/fredrick-sebastian-54bb8a343?utm_source=share&utm_compaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="img.html/in.jpg" alt="" class="social-img"></a>
-      <a href="https://www.facebook.com/profile.php?id=100069324382914" target="_blank"><img src="img.html/fb.jpg" alt="" class="social-img"></a>
-      <a href="https://wa.me/255711348700" target="_blank"><img src="img.html/wt.jpg" alt="" class="social-img"></a>
-      <a href="https://t.me/NyumbaniSafari" target="_blank"><img src="img.html/tg.jpg" alt="" class="social-img"></a>
+      <a href="https://www.linkedin.com/in/fredrick-sebastian-54bb8a343?utm_source=share&utm_compaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="img/in.jpg" alt="" class="social-img"></a>
+      <a href="https://www.facebook.com/profile.php?id=100069324382914" target="_blank"><img src="img/fb.jpg" alt="" class="social-img"></a>
+      <a href="https://wa.me/255719657519" target="_blank"><img src="img/wt.jpg" alt="" class="social-img"></a>
+      <a href="https://t.me/NyumbaniSafari" target="_blank"><img src="img/tg.jpg" alt="" class="social-img"></a>
     </div>
   </div>
   </section>
